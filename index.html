@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InboxZen - Tăng năng suất email</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <div>
+          <p class="brand-title">InboxZen</p>
+          <p class="brand-subtitle">Inbox-zero productivity suite</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="ghost-button">Bộ lọc thông minh</button>
+        <button class="primary-button">Tạo mẫu mới</button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div>
+          <h1>Giữ inbox gọn gàng, xử lý email nhanh hơn.</h1>
+          <p>
+            InboxZen phân loại email, gợi ý hành động, và nhắc nhở theo dõi để bạn luôn đạt trạng thái
+            inbox-zero.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button">Bắt đầu ca làm việc</button>
+            <button class="ghost-button">Xem báo cáo hôm nay</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-title">Inbox hôm nay</p>
+          <div class="hero-progress">
+            <div>
+              <p class="metric">36</p>
+              <p>email mới</p>
+            </div>
+            <div>
+              <p class="metric success">92%</p>
+              <p>đã xử lý</p>
+            </div>
+          </div>
+          <div class="hero-status">
+            <span class="pill success">Inbox-zero sắp đạt</span>
+            <span class="pill">Tập trung: 15 phút</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <h2>Bảng điều khiển inbox</h2>
+        <div class="dashboard-grid">
+          <article class="card">
+            <p class="card-label">Ưu tiên</p>
+            <p class="card-value">12</p>
+            <p class="card-meta">Đòi hỏi phản hồi trong 2 giờ</p>
+          </article>
+          <article class="card">
+            <p class="card-label">Đang chờ</p>
+            <p class="card-value">8</p>
+            <p class="card-meta">Đợi file hoặc xác nhận</p>
+          </article>
+          <article class="card">
+            <p class="card-label">Tự động xử lý</p>
+            <p class="card-value">19</p>
+            <p class="card-meta">Quy tắc thông minh đã áp dụng</p>
+          </article>
+          <article class="card success-card">
+            <p class="card-label">Hoàn tất</p>
+            <p class="card-value">46</p>
+            <p class="card-meta">Email được lưu trữ hôm nay</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="section-header">
+          <h2>Chế độ xem phân loại email</h2>
+          <button class="ghost-button">Tùy chỉnh danh mục</button>
+        </div>
+        <div class="category-grid">
+          <article class="category-card">
+            <div>
+              <p class="category-title">Khách hàng quan trọng</p>
+              <p class="category-count">5 email</p>
+            </div>
+            <div class="quick-actions">
+              <button>Trả lời nhanh</button>
+              <button class="outline">Gắn cờ</button>
+              <button class="outline">Giao việc</button>
+            </div>
+          </article>
+          <article class="category-card">
+            <div>
+              <p class="category-title">Nội bộ</p>
+              <p class="category-count">9 email</p>
+            </div>
+            <div class="quick-actions">
+              <button>Gửi mẫu</button>
+              <button class="outline">Lên lịch</button>
+              <button class="outline">Lưu trữ</button>
+            </div>
+          </article>
+          <article class="category-card">
+            <div>
+              <p class="category-title">Cần phản hồi</p>
+              <p class="category-count">4 email</p>
+            </div>
+            <div class="quick-actions">
+              <button>Trả lời</button>
+              <button class="outline">Đặt nhắc</button>
+              <button class="outline">Tạo nhiệm vụ</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="templates">
+        <div class="section-header">
+          <h2>Thư viện mẫu với biến</h2>
+          <button class="ghost-button">Quản lý biến</button>
+        </div>
+        <div class="template-grid">
+          <article class="template-card">
+            <h3>Cập nhật dự án nhanh</h3>
+            <p>
+              Xin chào {tên}, dự án {dự_án} đã đạt {tiến_độ}. Chúng tôi sẽ cập nhật tiếp vào {ngày}.
+            </p>
+            <div class="template-footer">
+              <span class="pill">{tên}</span>
+              <span class="pill">{dự_án}</span>
+              <span class="pill">{ngày}</span>
+            </div>
+          </article>
+          <article class="template-card">
+            <h3>Nhắc xác nhận tài liệu</h3>
+            <p>
+              Chào {tên}, bạn vui lòng xác nhận tài liệu {tài_liệu} trước {hạn} để đội ngũ xử lý tiếp.
+            </p>
+            <div class="template-footer">
+              <span class="pill">{tài_liệu}</span>
+              <span class="pill">{hạn}</span>
+            </div>
+          </article>
+          <article class="template-card">
+            <h3>Cảm ơn sau cuộc họp</h3>
+            <p>
+              Cảm ơn {tên} đã tham gia cuộc họp. Tóm tắt chính: {tóm_tắt}. Các bước tiếp theo: {bước}.
+            </p>
+            <div class="template-footer">
+              <span class="pill">{tóm_tắt}</span>
+              <span class="pill">{bước}</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="follow-up">
+        <div>
+          <h2>Lịch nhắc nhở theo dõi</h2>
+          <p>Luôn theo kịp các cam kết với lịch nhắc và đề xuất thời gian tối ưu.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="time">09:00</span>
+              <div>
+                <p class="timeline-title">Gửi bản chào giá - Công ty An Phát</p>
+                <p class="timeline-meta">Ưu tiên cao · 2 người liên quan</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="time">13:30</span>
+              <div>
+                <p class="timeline-title">Theo dõi hợp đồng - Dự án Zen</p>
+                <p class="timeline-meta">Đã đặt nhắc · Email chưa mở</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="time">16:15</span>
+              <div>
+                <p class="timeline-title">Cập nhật nội bộ - Sprint tuần này</p>
+                <p class="timeline-meta">Nhóm sản phẩm · Mẫu sẵn có</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calendar">
+          <div class="calendar-header">
+            <h3>Thứ Năm</h3>
+            <span class="pill success">3 nhắc nhở</span>
+          </div>
+          <div class="calendar-grid">
+            <div class="calendar-day active">
+              <span>19</span>
+              <small>Hôm nay</small>
+            </div>
+            <div class="calendar-day">
+              <span>20</span>
+              <small>5 nhắc</small>
+            </div>
+            <div class="calendar-day">
+              <span>21</span>
+              <small>2 nhắc</small>
+            </div>
+            <div class="calendar-day">
+              <span>22</span>
+              <small>1 nhắc</small>
+            </div>
+          </div>
+          <button class="primary-button full">Lên lịch theo dõi</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-card">
+        <h3>Phân tích email</h3>
+        <p class="analytics">Thời gian xử lý trung bình: <strong>4 phút</strong></p>
+        <p class="analytics">Tỷ lệ trả lời trong 24h: <strong>93%</strong></p>
+        <div class="progress">
+          <span>Đạt chỉ số inbox-zero</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-card">
+        <h3>Cài đặt & tối ưu</h3>
+        <ul>
+          <li>Bộ lọc thông minh: bật</li>
+          <li>Đề xuất mẫu: 12 mẫu</li>
+          <li>Thông báo ưu tiên: chỉ email quan trọng</li>
+          <li>Đồng bộ lịch: Google Calendar</li>
+        </ul>
+        <button class="ghost-button">Điều chỉnh cài đặt</button>
+      </div>
+    </footer>
+  </body>
+</html>
